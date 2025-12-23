@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sushanth — Portfolio</title>
   <meta name="description" content="Sushanth's portfolio — data science, machine learning, and analytics." />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -15,16 +14,16 @@
 
 <body>
   <header class="site-header">
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav">
       <a class="brand" href="#about" aria-label="Go to About">
-        <span class="brand-glow" aria-hidden="true"></span>
-        <span class="brand-text">
-          <span class="brand-name">Sushanth</span>
-          <span class="brand-role">Data Scientist</span>
-        </span>
+        <div class="brand-glow" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="brand-name">Sushanth</div>
+          <div class="brand-role">Data Scientist</div>
+        </div>
       </a>
 
-      <div class="nav-links" role="navigation" aria-label="Sections">
+      <div class="nav-links" role="navigation" aria-label="Primary">
         <button class="nav-btn is-active" data-target="about">About</button>
         <button class="nav-btn" data-target="projects">Projects</button>
         <button class="nav-btn" data-target="experience">Experience</button>
@@ -36,435 +35,188 @@
   </header>
 
   <main>
-    <!-- ABOUT (placeholder) -->
+    <!-- Keep your existing sections as-is -->
     <section id="about" class="hero">
-      <div class="bg-orb orb-a" aria-hidden="true"></div>
-      <div class="bg-orb orb-b" aria-hidden="true"></div>
-      <div class="bg-orb orb-c" aria-hidden="true"></div>
-
       <div class="hero-inner">
-        <div class="hero-top">
-          <div class="pill">
-            <span class="pill-dot" aria-hidden="true">👋</span>
-            <span>Welcome to my portfolio</span>
-          </div>
-
-          <h1 class="hero-title">
-            Hi, I’m<br />
-            <span class="hero-name">Sushanth</span>
-          </h1>
-
-          <div class="hero-sub">Data Scientist &amp; ML Engineer</div>
-          <div class="hero-loc">📍 Brooklyn, New York, USA</div>
-        </div>
-
-        <div class="highlights">
-          <div class="hl-card">
-            <div class="hl-icon" data-tone="blue">&lt;/&gt;</div>
-            <div class="hl-text">CS &amp; ML since 2017</div>
-          </div>
-          <div class="hl-card">
-            <div class="hl-icon" data-tone="teal">🧠</div>
-            <div class="hl-text">Messy data → real systems</div>
-          </div>
-          <div class="hl-card">
-            <div class="hl-icon" data-tone="purple">🚀</div>
-            <div class="hl-text">Shipped ML for impact</div>
-          </div>
-          <div class="hl-card">
-            <div class="hl-icon" data-tone="yellow">✨</div>
-            <div class="hl-text">Storytelling + rigor</div>
-          </div>
-        </div>
-
-        <div class="about-card">
-          <p>
-            I’m passionate about working with messy, complex data and turning it into valuable insights and products
-            that help run the world.
-          </p>
-          <p>
-            Since 2017, I’ve worked across applied machine learning, analytics, and experimentation—building models,
-            shipping systems, and communicating results in a way that drives decisions.
-          </p>
-        </div>
-
-        <div class="spec-grid">
-          <div class="spec-item">Machine Learning &amp; Deep Learning</div>
-          <div class="spec-item">Large Language Models</div>
-          <div class="spec-item">MLOps &amp; Model Deployment</div>
-          <div class="spec-item">Time Series &amp; Forecasting</div>
-          <div class="spec-item">A/B Testing &amp; Causal Inference</div>
-          <div class="spec-item">Data Storytelling &amp; Visualization</div>
-        </div>
+        <h1 class="hero-title">Hi, I’m<br /><span class="hero-name">Sushanth</span></h1>
+        <div class="hero-sub">Data Scientist &amp; ML Engineer</div>
+        <div class="hero-loc">📍 Brooklyn, New York, USA</div>
       </div>
     </section>
 
-    <!-- PROJECTS (placeholder) -->
-    <section id="projects" class="projects-section">
-      <div class="projects-header">
-        <h2>Featured Projects</h2>
-        <p>Transforming data into impactful solutions</p>
-        <div class="underline"></div>
-      </div>
+    <section id="projects" class="section shell"><h2>Projects</h2></section>
+    <section id="experience" class="section shell"><h2>Experience</h2></section>
+    <section id="education" class="section shell"><h2>Education</h2></section>
+    <section id="creative" class="section shell"><h2>Creative</h2></section>
 
-      <div class="projects-grid">
-        <div class="project-card accent-blue">
-          <h3>Customer Churn Prediction</h3>
-          <p>Built an ensemble model achieving 94% accuracy in predicting churn, helping reduce attrition by 23%.</p>
-          <div class="tags">
-            <span>Python</span><span>XGBoost</span><span>SHAP</span><span>AWS SageMaker</span>
-          </div>
-          <div class="metrics">
-            <div class="metric"><span class="label">Accuracy</span><span class="value">94%</span></div>
-            <div class="metric"><span class="label">Impact</span><span class="value">23% reduction</span></div>
-          </div>
-          <div class="actions">
-            <a href="#" class="read-more">Read more</a>
-            <a href="https://github.com/sushanth128" class="github" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card accent-teal">
-          <h3>Real-Time Sentiment Analysis</h3>
-          <p>Developed a streaming NLP pipeline processing 10K+ social media posts per minute.</p>
-          <div class="tags">
-            <span>PyTorch</span><span>Transformers</span><span>Kafka</span><span>Docker</span>
-          </div>
-          <div class="metrics">
-            <div class="metric"><span class="label">Throughput</span><span class="value">10K/min</span></div>
-            <div class="metric"><span class="label">Latency</span><span class="value">&lt;100ms</span></div>
-          </div>
-          <div class="actions">
-            <a href="#" class="read-more">Read more</a>
-            <a href="https://github.com/sushanth128" class="github" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE (placeholder) -->
-    <section id="experience" class="section">
-      <header class="section-header">
-        <h2 class="section-title">Work Experience</h2>
-        <p class="section-subtitle">Industry, research, and applied ML work</p>
-        <span class="section-underline"></span>
-      </header>
-
-      <div class="xp-grid">
-        <article class="xp-card" data-accent="teal">
-          <div class="xp-top">
-            <div class="xp-brand">
-              <img class="xp-logo" src="assets/img/company.png" alt="Company logo" />
-              <div class="xp-main">
-                <h3 class="xp-role">Machine Learning Engineer</h3>
-                <div class="xp-company">Startup / Company Name</div>
-              </div>
-            </div>
-            <div class="xp-meta">
-              <span class="xp-loc">Brooklyn, NY</span>
-              <span class="xp-dot">•</span>
-              <span class="xp-dates">2021 – Present</span>
-            </div>
-          </div>
-
-          <ul class="xp-bullets">
-            <li>Built and deployed ML models for production systems handling real-world, noisy data</li>
-            <li>Worked on forecasting, experimentation, and model evaluation pipelines</li>
-            <li>Partnered with product and business teams to translate models into decisions</li>
-            <li>Improved model performance and reliability through monitoring and iteration</li>
-          </ul>
-
-          <div class="xp-tags">
-            <span class="xp-tag">Python</span>
-            <span class="xp-tag">Machine Learning</span>
-            <span class="xp-tag">SQL</span>
-            <span class="xp-tag">MLOps</span>
-          </div>
-        </article>
-
-        <article class="xp-card" data-accent="purple">
-          <div class="xp-top">
-            <div class="xp-brand">
-              <img class="xp-logo" src="assets/img/cmu.png" alt="Carnegie Mellon University logo" />
-              <div class="xp-main">
-                <h3 class="xp-role">Graduate Research / Teaching Assistant</h3>
-                <div class="xp-company">Carnegie Mellon University</div>
-              </div>
-            </div>
-            <div class="xp-meta">
-              <span class="xp-loc">Pittsburgh, PA</span>
-              <span class="xp-dot">•</span>
-              <span class="xp-dates">2023 – 2025</span>
-            </div>
-          </div>
-
-          <ul class="xp-bullets">
-            <li>Conducted applied ML and AI research in collaboration with faculty</li>
-            <li>Supported coursework in applied econometrics and data science</li>
-            <li>Designed assignments and mentored students on modeling techniques</li>
-          </ul>
-
-          <div class="xp-tags">
-            <span class="xp-tag">Machine Learning</span>
-            <span class="xp-tag">Research</span>
-            <span class="xp-tag">Teaching</span>
-            <span class="xp-tag">Econometrics</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- EDUCATION (placeholder) -->
-    <section id="education" class="section education-section">
-      <header class="section-header">
-        <h2 class="section-title">Education</h2>
-        <p class="section-subtitle">Formal training and core coursework</p>
-        <span class="section-underline"></span>
-      </header>
-
-      <div class="edu-stack">
-        <article class="edu-card">
-          <div class="edu-left">
-            <img class="edu-logo" src="assets/img/cmu.png" alt="Carnegie Mellon University logo" />
-            <div class="edu-schoolblock">
-              <div class="edu-school">Carnegie Mellon University</div>
-              <div class="edu-location">Pittsburgh, PA</div>
-              <div class="edu-dates">2023 – 2025</div>
-            </div>
-          </div>
-
-          <div class="edu-middle">
-            <div class="edu-degree">M.S. in Information Systems &amp; Management</div>
-            <div class="edu-track">Data Science &amp; ML</div>
-            <div class="edu-meta">
-              <span class="edu-pill">Graduate Program</span>
-              <span class="edu-pill">AI Systems</span>
-              <span class="edu-pill">Analytics</span>
-            </div>
-          </div>
-
-          <div class="edu-right">
-            <div class="edu-right-title">Relevant coursework</div>
-            <ul class="edu-courses">
-              <li>Machine Learning</li><li>Graduate AI</li><li>Operationalizing AI</li>
-              <li>Unstructured Analytics</li><li>Database Systems</li><li>Applied Econometrics</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="edu-card">
-          <div class="edu-left">
-            <img class="edu-logo" src="assets/img/mit.png" alt="Manipal Institute of Technology logo" />
-            <div class="edu-schoolblock">
-              <div class="edu-school">Manipal Institute of Technology</div>
-              <div class="edu-location">Karnataka, India</div>
-              <div class="edu-dates">2017 – 2021</div>
-            </div>
-          </div>
-
-          <div class="edu-middle">
-            <div class="edu-degree">B.Tech in Computer Science</div>
-            <div class="edu-track">Specialization in Intelligent Systems</div>
-            <div class="edu-meta">
-              <span class="edu-pill">CS Foundations</span>
-              <span class="edu-pill">Systems</span>
-              <span class="edu-pill">AI/ML</span>
-            </div>
-          </div>
-
-          <div class="edu-right">
-            <div class="edu-right-title">Relevant coursework</div>
-            <ul class="edu-courses">
-              <li>Data Structures</li><li>Algorithms</li><li>Software Engineering</li>
-              <li>Cloud Computing</li><li>Parallel Programming</li><li>NLP</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CREATIVE (placeholder) -->
-    <section id="creative" class="section">
-      <header class="section-header">
-        <h2 class="section-title">Creative</h2>
-        <p class="section-subtitle">Side quests, art, and experiments</p>
-        <span class="section-underline"></span>
-      </header>
-      <div class="container">
-        <div class="placeholder-card">Add creative content here.</div>
-      </div>
-    </section>
-
-    <!-- CONTACT (matches screenshot style) -->
-    <section id="contact" class="section contact-section">
-      <header class="section-header">
-        <h2 class="section-title">Contact</h2>
-        <p class="section-subtitle">Reach out for roles, collaborations, or a quick chat</p>
-        <span class="section-underline"></span>
+    <!-- CONTACT (this is the part you asked for) -->
+    <section id="contact" class="contact-section">
+      <header class="contact-header">
+        <h2>Connect</h2>
+        <p>Reach out for collaborations, roles, or a quick chat.</p>
+        <span class="contact-underline"></span>
       </header>
 
       <div class="contact-wrap">
         <div class="contact-grid">
-          <a class="contact-card wide" href="mailto:sushanth@example.com">
-            <div class="contact-ico" data-tone="teal" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M4 7.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M4 7.5 12 13l8-5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <a class="contact-card" href="mailto:sushanth@example.com">
+            <span class="icon-wrap" aria-hidden="true">
+              <!-- Mail -->
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8" />
+                <path d="m4 7 8 7 8-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-            </div>
+            </span>
             <div class="contact-text">
               <div class="contact-label">Email</div>
               <div class="contact-value">sushanth@example.com</div>
             </div>
           </a>
 
-          <a class="contact-card" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-            <div class="contact-ico" data-tone="blue" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M6.5 9.5V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M6.5 6.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                <path d="M10.5 18v-5.2c0-1.9 1.1-3 2.8-3 1.6 0 2.2 1.1 2.2 2.7V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <a class="contact-card" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noreferrer">
+            <span class="icon-wrap" aria-hidden="true" data-tone="blue">
+              <!-- LinkedIn -->
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M6.5 10.5V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M6.5 7.2h.01" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                <path d="M10.5 18v-4.2c0-1.9 1.2-3.3 3-3.3s3 1.4 3 3.3V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.5 10.5V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
               </svg>
-            </div>
+            </span>
             <div class="contact-text">
               <div class="contact-label">LinkedIn</div>
-              <div class="contact-value">linkedin.com/in/sushanth</div>
+              <div class="contact-value">linkedin.com/in/your-handle</div>
             </div>
           </a>
 
           <a class="contact-card" href="https://github.com/sushanth128" target="_blank" rel="noreferrer">
-            <div class="contact-ico" data-tone="purple" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M9 19c-4 1.3-4-2.5-5-3m10 6v-3.2c0-.9.3-1.4.8-2-2.7-.3-5.5-1.3-5.5-6A4.7 4.7 0 0 1 6.6 6.5c-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0C18.3 3 19.3 3.3 19.3 3.3c.6 1.6.2 2.9.1 3.2a4.7 4.7 0 0 1 1.3 3.3c0 4.7-2.8 5.7-5.5 6 .5.5.9 1.2.9 2.3V22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <span class="icon-wrap" aria-hidden="true" data-tone="purple">
+              <!-- GitHub -->
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M9 19c-3 1-3-1.5-4-2m8 3v-2.6c0-.8.3-1.4.8-1.9-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.5.9 1.3.9 2.5V20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-            </div>
+            </span>
             <div class="contact-text">
               <div class="contact-label">GitHub</div>
               <div class="contact-value">github.com/sushanth128</div>
             </div>
           </a>
 
-          <a class="contact-card" href="https://x.com/" target="_blank" rel="noreferrer">
-            <div class="contact-ico" data-tone="blue" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M20 7.5c-.6.3-1.3.5-2 .6.7-.4 1.2-1.1 1.5-1.9-.7.4-1.5.7-2.3.9A3.4 3.4 0 0 0 11.5 10c0 .3 0 .6.1.8-3.2-.2-6-1.8-8-4.4-.4.7-.5 1.5-.5 2.3 0 1.2.6 2.3 1.6 3-.6 0-1.1-.2-1.6-.4v.1c0 1.7 1.2 3.2 2.9 3.5-.3.1-.7.1-1 .1-.2 0-.5 0-.7-.1.5 1.5 2 2.6 3.7 2.6A6.9 6.9 0 0 1 4 18.6 9.7 9.7 0 0 0 9.3 20c6.3 0 9.7-5.4 9.7-10.1v-.5c.7-.5 1.3-1.1 1.8-1.9Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <a class="contact-card" href="https://your-site.com" target="_blank" rel="noreferrer">
+            <span class="icon-wrap" aria-hidden="true" data-tone="teal">
+              <!-- Globe -->
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3 12h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M12 3c2.5 2.7 3.8 5.8 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.8-3.8-9S9.5 5.7 12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-            </div>
-            <div class="contact-text">
-              <div class="contact-label">Twitter</div>
-              <div class="contact-value">@sushanth</div>
-            </div>
-          </a>
-
-          <a class="contact-card" href="#" target="_blank" rel="noreferrer">
-            <div class="contact-ico" data-tone="yellow" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z" stroke="currentColor" stroke-width="1.6"/>
-                <path d="M3.5 9.5h17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M12 3a14 14 0 0 1 0 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              </svg>
-            </div>
+            </span>
             <div class="contact-text">
               <div class="contact-label">Website</div>
-              <div class="contact-value">sushanth128.github.io</div>
+              <div class="contact-value">your-site.com</div>
             </div>
           </a>
         </div>
 
-        <div class="availability">
-          <div class="avail-head">
-            <span class="avail-dot" aria-hidden="true"></span>
-            <span class="avail-title">Currently Available</span>
+        <div class="availability-card">
+          <div class="availability-title">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Currently Available</span>
           </div>
 
-          <div class="avail-grid">
-            <div class="avail-card">
-              <div class="avail-ico" data-tone="teal" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M12 10.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="currentColor" stroke-width="1.6"/>
-                </svg>
+          <div class="availability-grid">
+            <div class="mini-card">
+              <div class="mini-top">
+                <span class="mini-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 21s7-4.4 7-11a7 7 0 1 0-14 0c0 6.6 7 11 7 11Z" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M12 10.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                </span>
+                <div class="mini-label">Location</div>
               </div>
-              <div class="avail-k">Location</div>
-              <div class="avail-v">Remote or NYC</div>
+              <div class="mini-value">Brooklyn, NY / Remote</div>
             </div>
 
-            <div class="avail-card">
-              <div class="avail-ico" data-tone="blue" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M7 7h10v14H7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                  <path d="M9 3h6v4H9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                </svg>
+            <div class="mini-card">
+              <div class="mini-top">
+                <span class="mini-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none">
+                    <path d="M8 7h8M8 12h8M8 17h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                </span>
+                <div class="mini-label">Interested Roles</div>
               </div>
-              <div class="avail-k">Interested Roles</div>
-              <div class="avail-v">Data Scientist, ML Engineer</div>
+              <div class="mini-value">Data Scientist, ML Engineer</div>
             </div>
 
-            <div class="avail-card">
-              <div class="avail-ico" data-tone="purple" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M6 20V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                  <path d="M9 7V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                </svg>
+            <div class="mini-card">
+              <div class="mini-top">
+                <span class="mini-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M7 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M5 21h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M9 21v-3.5c0-1.7 1.3-3 3-3s3 1.3 3 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div class="mini-label">Work Type</div>
               </div>
-              <div class="avail-k">Work Type</div>
-              <div class="avail-v">Full-time, Contract</div>
+              <div class="mini-value">Full-time, Contract</div>
             </div>
           </div>
 
           <div class="quick-note">
-            <span class="quick-badge">⏱ Quick Response</span>
-            <span>I typically respond within 24–48 hours. For urgent matters, put “URGENT” in the subject.</span>
+            <span class="quick-pill">Quick response</span>
+            <span>Typically within 24–48 hours. Add “URGENT” to subject if needed.</span>
           </div>
         </div>
 
-        <div class="cta-row">
-          <a class="cta-btn" href="mailto:sushanth@example.com">
-            <span class="cta-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M4 7.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M4 7.5 12 13l8-5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <span>Send me a message</span>
-            <span class="cta-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M22 2 11 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M22 2 15 22l-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-          </a>
-        </div>
+        <a class="contact-cta" href="mailto:sushanth@example.com?subject=Hello%20Sushanth">
+          <span class="cta-icon" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24" fill="none">
+              <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8" />
+              <path d="m4 7 8 7 8-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span>Send me a message</span>
+          <span class="cta-icon" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24" fill="none">
+              <path d="M4 12 20 4l-6 16-2.6-6.2L4 12Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
       </div>
     </section>
   </main>
 
   <script>
+    // nav scroll + active state
     (function () {
-      const buttons = Array.from(document.querySelectorAll(".nav-btn"));
-      const sections = buttons.map(b => document.getElementById(b.dataset.target)).filter(Boolean);
+      const btns = Array.from(document.querySelectorAll(".nav-btn"));
+      const sections = btns.map(b => document.getElementById(b.dataset.target)).filter(Boolean);
 
       function setActive(id) {
-        buttons.forEach(b => b.classList.toggle("is-active", b.dataset.target === id));
+        btns.forEach(b => b.classList.toggle("is-active", b.dataset.target === id));
       }
 
-      function scrollToSection(id) {
-        const el = document.getElementById(id);
-        if (!el) return;
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-        setActive(id);
-      }
+      btns.forEach(b => {
+        b.addEventListener("click", () => {
+          const el = document.getElementById(b.dataset.target);
+          if (!el) return;
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          setActive(b.dataset.target);
+        });
+      });
 
-      buttons.forEach(btn => btn.addEventListener("click", () => scrollToSection(btn.dataset.target)));
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) setActive(e.target.id);
+        });
+      }, { rootMargin: "-45% 0px -50% 0px", threshold: 0.01 });
 
-      const obs = new IntersectionObserver((entries) => {
-        const visible = entries
-          .filter(e => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible?.target?.id) setActive(visible.target.id);
-      }, { root: null, threshold: [0.2, 0.35, 0.5, 0.65] });
-
-      sections.forEach(s => obs.observe(s));
+      sections.forEach(s => io.observe(s));
     })();
   </script>
 </body>
