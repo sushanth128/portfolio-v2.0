@@ -404,183 +404,154 @@ body{
   color: #ffffff;
 }
 
-.education-section .edu-list {
-  display: grid;
-  gap: 18px;
-  margin-top: 18px;
+/* EXPERIENCE (append to styles.css) */
+.section {
+  padding: 64px 24px;
 }
 
-.edu-card {
+.section-header {
+  text-align: center;
+  margin: 0 auto 32px;
+  max-width: 900px;
+}
+
+.section-title {
+  font-size: 44px;
+  line-height: 1.1;
+  margin: 0 0 10px;
+  color: #fff;
+}
+
+.section-subtitle {
+  margin: 0 0 16px;
+  color: rgba(255,255,255,0.62);
+  font-size: 16px;
+}
+
+.section-underline {
+  width: 140px;
+  height: 4px;
+  margin: 0 auto;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #007acc, #4ec9b0);
+  opacity: 0.9;
+}
+
+/* grid like projects */
+.xp-grid {
+  max-width: 1160px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
-  padding: 18px;
+}
+
+.xp-card {
+  background: rgba(37, 37, 38, 0.78);
+  border: 1px solid rgba(62, 62, 66, 0.9);
   border-radius: 16px;
-  background: rgba(37, 37, 38, 0.7);
-  border: 1px solid rgba(62, 62, 66, 0.9);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  padding: 18px 18px 16px;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
 }
 
-.edu-school-row {
+.xp-card:hover {
+  border-color: rgba(0, 122, 204, 0.55);
+}
+
+.xp-top {
   display: flex;
-  gap: 12px;
   align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
-.edu-logo {
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
+.xp-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.xp-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   object-fit: cover;
+  background: rgba(0,0,0,0.25);
   border: 1px solid rgba(62, 62, 66, 0.9);
-  background: rgba(0, 0, 0, 0.25);
   flex: 0 0 auto;
 }
 
-.edu-school {
+.xp-role {
+  margin: 0;
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
-  color: #ffffff;
-  line-height: 1.2;
 }
 
-.edu-degree {
-  margin-top: 6px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #d4d4d4;
-}
-
-.edu-track {
-  margin-top: 4px;
+.xp-company {
+  margin-top: 2px;
+  color: rgba(255,255,255,0.65);
   font-size: 13px;
-  color: #858585;
 }
 
-.edu-meta {
-  margin-top: 10px;
-  font-size: 12px;
-  color: #9aa0a6;
-}
-
-.edu-right {
+.xp-meta {
+  color: rgba(255,255,255,0.55);
+  font-size: 12.5px;
+  white-space: nowrap;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
+  padding-top: 4px;
 }
 
-.edu-courses-title {
-  font-size: 12px;
-  color: #9aa0a6;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+.xp-dot {
+  opacity: 0.6;
 }
 
-.edu-courses {
+.xp-bullets {
   margin: 0;
   padding-left: 18px;
-  color: #c6c6c6;
-  font-size: 13px;
-  line-height: 1.65;
-  columns: 2;
-  column-gap: 24px;
-}
-
-.edu-courses li {
-  break-inside: avoid;
-  margin: 0 0 6px;
-}
-
-@media (max-width: 900px) {
-  .edu-card {
-    grid-template-columns: 1fr;
-  }
-  .edu-courses {
-    columns: 1;
-  }
-}
-
-.experience-section .experience-list {
-  display: grid;
-  gap: 18px;
-  margin-top: 18px;
-}
-
-.experience-card {
-  display: grid;
-  grid-template-columns: 1.1fr 1.4fr;
-  gap: 20px;
-  padding: 20px;
-  border-radius: 16px;
-  background: rgba(37, 37, 38, 0.7);
-  border: 1px solid rgba(62, 62, 66, 0.9);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-}
-
-.exp-header {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-
-.exp-logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  object-fit: cover;
-  border: 1px solid rgba(62, 62, 66, 0.9);
-  background: rgba(0, 0, 0, 0.25);
-}
-
-.exp-role {
-  font-size: 17px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.exp-company {
-  margin-top: 4px;
+  color: rgba(255,255,255,0.78);
   font-size: 14px;
-  color: #c6c6c6;
+  line-height: 1.6;
 }
 
-.exp-meta {
-  margin-top: 10px;
-  font-size: 12px;
-  color: #9aa0a6;
+.xp-bullets li {
+  margin: 6px 0;
 }
 
-.exp-bullets {
-  margin: 0;
-  padding-left: 18px;
-  font-size: 14px;
-  color: #d4d4d4;
-  line-height: 1.65;
-}
-
-.exp-bullets li {
-  margin-bottom: 8px;
-}
-
-.exp-tags {
-  margin-top: 12px;
+.xp-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-top: 14px;
 }
 
-.exp-tags span {
-  font-size: 12px;
-  padding: 4px 10px;
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
   border-radius: 999px;
-  background: #1f1f1f;
-  border: 1px solid #3e3e42;
-  color: #9cdcfe;
+  font-size: 12px;
+  color: rgba(255,255,255,0.82);
+  background: rgba(0,0,0,0.18);
+  border: 1px solid rgba(62, 62, 66, 0.9);
 }
 
-@media (max-width: 900px) {
-  .experience-card {
+.pill:hover {
+  border-color: rgba(78, 201, 176, 0.6);
+}
+
+/* responsive */
+@media (max-width: 980px) {
+  .xp-grid {
     grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 36px;
   }
 }
 
