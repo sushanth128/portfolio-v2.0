@@ -403,3 +403,100 @@ body{
 .read-more:hover {
   color: #ffffff;
 }
+
+.education-section .edu-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.edu-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 18px;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(37, 37, 38, 0.7);
+  border: 1px solid rgba(62, 62, 66, 0.9);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.edu-school-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.edu-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid rgba(62, 62, 66, 0.9);
+  background: rgba(0, 0, 0, 0.25);
+  flex: 0 0 auto;
+}
+
+.edu-school {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.edu-degree {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #d4d4d4;
+}
+
+.edu-track {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #858585;
+}
+
+.edu-meta {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #9aa0a6;
+}
+
+.edu-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edu-courses-title {
+  font-size: 12px;
+  color: #9aa0a6;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.edu-courses {
+  margin: 0;
+  padding-left: 18px;
+  color: #c6c6c6;
+  font-size: 13px;
+  line-height: 1.65;
+  columns: 2;
+  column-gap: 24px;
+}
+
+.edu-courses li {
+  break-inside: avoid;
+  margin: 0 0 6px;
+}
+
+@media (max-width: 900px) {
+  .edu-card {
+    grid-template-columns: 1fr;
+  }
+  .edu-courses {
+    columns: 1;
+  }
+}
+
