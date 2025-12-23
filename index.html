@@ -6,21 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sushanth — Portfolio</title>
   <meta name="description" content="Sushanth's portfolio — data science, machine learning, and analytics." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
 <body>
+  <!-- HEADER -->
   <header class="site-header">
     <nav class="nav">
       <a class="brand" href="#about" aria-label="Go to About">
-        <div class="brand-glow" aria-hidden="true"></div>
-        <div class="brand-text">
-          <div class="brand-name">Sushanth</div>
-          <div class="brand-role">Data Scientist</div>
-        </div>
+        <span class="brand-glow" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Sushanth</span>
+          <span class="brand-role">Data Scientist</span>
+        </span>
       </a>
 
       <div class="nav-links" role="navigation" aria-label="Primary">
@@ -35,167 +37,519 @@
   </header>
 
   <main>
-    <!-- Keep your existing sections as-is -->
+    <!-- ABOUT -->
     <section id="about" class="hero">
+      <div class="bg-orb orb-a" aria-hidden="true"></div>
+      <div class="bg-orb orb-b" aria-hidden="true"></div>
+      <div class="bg-orb orb-c" aria-hidden="true"></div>
+
       <div class="hero-inner">
-        <h1 class="hero-title">Hi, I’m<br /><span class="hero-name">Sushanth</span></h1>
-        <div class="hero-sub">Data Scientist &amp; ML Engineer</div>
-        <div class="hero-loc">📍 Brooklyn, New York, USA</div>
+        <div class="hero-top">
+          <div class="pill pill--welcome">
+            <span class="pill-dot" aria-hidden="true">👋</span>
+            <span>Welcome to my portfolio</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I’m<br />
+            <span class="hero-name">Sushanth</span>
+          </h1>
+
+          <div class="hero-sub">Data Scientist &amp; ML Engineer</div>
+          <div class="hero-loc">📍 Brooklyn, New York, USA</div>
+        </div>
+
+        <div class="highlights">
+          <div class="hl-card">
+            <div class="hl-icon" data-tone="blue">&lt;/&gt;</div>
+            <div class="hl-text">CS &amp; ML since 2017</div>
+          </div>
+          <div class="hl-card">
+            <div class="hl-icon" data-tone="teal">🧠</div>
+            <div class="hl-text">Messy data → real systems</div>
+          </div>
+          <div class="hl-card">
+            <div class="hl-icon" data-tone="purple">🚀</div>
+            <div class="hl-text">Shipped ML for business impact</div>
+          </div>
+          <div class="hl-card">
+            <div class="hl-icon" data-tone="yellow">✨</div>
+            <div class="hl-text">Storytelling + rigor</div>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <p>
+            I’m passionate about working with messy, complex data and turning it into valuable insights and products
+            that help run the world.
+          </p>
+          <p>
+            Since 2017, I’ve worked across applied machine learning, analytics, and experimentation—building models,
+            shipping systems, and communicating results in a way that drives decisions.
+          </p>
+        </div>
+
+        <div class="spec-grid">
+          <div class="spec-item">Machine Learning &amp; Deep Learning</div>
+          <div class="spec-item">Large Language Models</div>
+          <div class="spec-item">MLOps &amp; Model Deployment</div>
+          <div class="spec-item">Time Series &amp; Forecasting</div>
+          <div class="spec-item">A/B Testing &amp; Causal Inference</div>
+          <div class="spec-item">Data Storytelling &amp; Visualization</div>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="section shell"><h2>Projects</h2></section>
-    <section id="experience" class="section shell"><h2>Experience</h2></section>
-    <section id="education" class="section shell"><h2>Education</h2></section>
-    <section id="creative" class="section shell"><h2>Creative</h2></section>
-
-    <!-- CONTACT (this is the part you asked for) -->
-    <section id="contact" class="contact-section">
-      <header class="contact-header">
-        <h2>Connect</h2>
-        <p>Reach out for collaborations, roles, or a quick chat.</p>
-        <span class="contact-underline"></span>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <header class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Transforming data into impactful solutions</p>
+        <span class="section-underline"></span>
       </header>
 
-      <div class="contact-wrap">
+      <div class="container">
+        <div class="projects-grid">
+          <article class="project-card accent-blue">
+            <h3>Customer Churn Prediction</h3>
+            <p>Built an ensemble model achieving 94% accuracy in predicting churn, reducing attrition by 23%.</p>
+
+            <div class="tags">
+              <span>Python</span><span>XGBoost</span><span>SHAP</span><span>AWS SageMaker</span>
+            </div>
+
+            <div class="metrics">
+              <div class="metric">
+                <span class="label">Accuracy</span>
+                <span class="value">94%</span>
+              </div>
+              <div class="metric">
+                <span class="label">Impact</span>
+                <span class="value">23% reduction</span>
+              </div>
+            </div>
+
+            <div class="actions">
+              <a href="#" class="read-more">Read more</a>
+              <a href="https://github.com/sushanth128" class="github" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card accent-teal">
+            <h3>Real-Time Sentiment Analysis</h3>
+            <p>Developed a streaming NLP pipeline processing 10K+ posts per minute with low latency.</p>
+
+            <div class="tags">
+              <span>PyTorch</span><span>Transformers</span><span>Kafka</span><span>Docker</span>
+            </div>
+
+            <div class="metrics">
+              <div class="metric">
+                <span class="label">Throughput</span>
+                <span class="value">10K/min</span>
+              </div>
+              <div class="metric">
+                <span class="label">Latency</span>
+                <span class="value">&lt;100ms</span>
+              </div>
+            </div>
+
+            <div class="actions">
+              <a href="#" class="read-more">Read more</a>
+              <a href="https://github.com/sushanth128" class="github" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <header class="section-header">
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">Industry, research, and applied ML work</p>
+        <span class="section-underline"></span>
+      </header>
+
+      <div class="container">
+        <div class="xp-grid">
+          <article class="xp-card" data-accent="teal">
+            <div class="xp-top">
+              <div class="xp-brand">
+                <img class="xp-logo" src="assets/img/company.png" alt="Company logo" />
+                <div class="xp-main">
+                  <h3 class="xp-role">Machine Learning Engineer</h3>
+                  <div class="xp-company">Startup / Company Name</div>
+                </div>
+              </div>
+
+              <div class="xp-meta">
+                <span class="xp-loc">Brooklyn, NY</span>
+                <span class="xp-dot">•</span>
+                <span class="xp-dates">2021 – Present</span>
+              </div>
+            </div>
+
+            <ul class="xp-bullets">
+              <li>Built and deployed ML models for production systems handling real-world, noisy data</li>
+              <li>Worked on forecasting, experimentation, and model evaluation pipelines</li>
+              <li>Partnered with product and business teams to translate models into decisions</li>
+              <li>Improved reliability through monitoring, iteration, and retraining</li>
+            </ul>
+
+            <div class="xp-tags">
+              <span class="xp-tag">Python</span>
+              <span class="xp-tag">Machine Learning</span>
+              <span class="xp-tag">SQL</span>
+              <span class="xp-tag">MLOps</span>
+            </div>
+          </article>
+
+          <article class="xp-card" data-accent="purple">
+            <div class="xp-top">
+              <div class="xp-brand">
+                <img class="xp-logo" src="assets/img/cmu.png" alt="Carnegie Mellon University logo" />
+                <div class="xp-main">
+                  <h3 class="xp-role">Graduate Research / Teaching Assistant</h3>
+                  <div class="xp-company">Carnegie Mellon University</div>
+                </div>
+              </div>
+
+              <div class="xp-meta">
+                <span class="xp-loc">Pittsburgh, PA</span>
+                <span class="xp-dot">•</span>
+                <span class="xp-dates">2023 – 2025</span>
+              </div>
+            </div>
+
+            <ul class="xp-bullets">
+              <li>Conducted applied ML/AI research with faculty collaborators</li>
+              <li>Supported coursework in applied econometrics and data science</li>
+              <li>Designed assignments and mentored students on modeling techniques</li>
+            </ul>
+
+            <div class="xp-tags">
+              <span class="xp-tag">Machine Learning</span>
+              <span class="xp-tag">Research</span>
+              <span class="xp-tag">Teaching</span>
+              <span class="xp-tag">Econometrics</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <header class="section-header">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Formal training and core coursework</p>
+        <span class="section-underline"></span>
+      </header>
+
+      <div class="container">
+        <div class="edu-stack">
+          <article class="edu-card">
+            <div class="edu-left">
+              <img class="edu-logo" src="assets/img/cmu.png" alt="Carnegie Mellon University logo" />
+              <div class="edu-schoolblock">
+                <div class="edu-school">Carnegie Mellon University</div>
+                <div class="edu-location">Pittsburgh, PA</div>
+                <div class="edu-dates">2023 – 2025</div>
+              </div>
+            </div>
+
+            <div class="edu-middle">
+              <div class="edu-degree">M.S. in Information Systems &amp; Management</div>
+              <div class="edu-track">Data Science &amp; ML</div>
+              <div class="edu-meta">
+                <span class="edu-pill">Graduate Program</span>
+                <span class="edu-pill">AI Systems</span>
+                <span class="edu-pill">Analytics</span>
+              </div>
+            </div>
+
+            <div class="edu-right">
+              <div class="edu-right-title">Relevant coursework</div>
+              <ul class="edu-courses">
+                <li>Machine Learning</li><li>Graduate AI</li><li>Operationalizing AI</li>
+                <li>Unstructured Analytics</li><li>Computer Vision</li><li>Database Systems</li>
+                <li>Advanced Business Analytics</li><li>Applied Econometrics</li><li>A/B Testing</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="edu-card">
+            <div class="edu-left">
+              <img class="edu-logo" src="assets/img/mit.png" alt="Manipal Institute of Technology logo" />
+              <div class="edu-schoolblock">
+                <div class="edu-school">Manipal Institute of Technology</div>
+                <div class="edu-location">Karnataka, India</div>
+                <div class="edu-dates">2017 – 2021</div>
+              </div>
+            </div>
+
+            <div class="edu-middle">
+              <div class="edu-degree">B.Tech in Computer Science</div>
+              <div class="edu-track">Specialization in Intelligent Systems</div>
+              <div class="edu-meta">
+                <span class="edu-pill">CS Foundations</span>
+                <span class="edu-pill">Systems</span>
+                <span class="edu-pill">AI/ML</span>
+              </div>
+            </div>
+
+            <div class="edu-right">
+              <div class="edu-right-title">Relevant coursework</div>
+              <ul class="edu-courses">
+                <li>Software Engineering</li><li>Data Structures</li><li>Algorithms</li>
+                <li>Object Oriented Programming</li><li>Cloud Computing</li><li>Parallel Programming</li>
+                <li>NLP</li><li>Computer Vision</li><li>Advanced Mathematics</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATIVE -->
+    <section id="creative" class="section">
+      <header class="section-header">
+        <h2 class="section-title">Creative</h2>
+        <p class="section-subtitle">Art + writing</p>
+        <span class="section-underline"></span>
+      </header>
+
+      <div class="container">
+        <div class="creative-grid">
+          <!-- ART -->
+          <div class="creative-block">
+            <div class="creative-head">
+              <h3 class="creative-title">Art</h3>
+              <button class="see-more" data-toggle="art">See more</button>
+            </div>
+
+            <div class="art-grid" data-collapsible="art">
+              <div class="art-card">
+                <div class="thumb"></div>
+                <div class="meta">
+                  <div class="name">Artwork Title</div>
+                  <div class="sub">Medium • Year</div>
+                </div>
+              </div>
+
+              <div class="art-card">
+                <div class="thumb"></div>
+                <div class="meta">
+                  <div class="name">Artwork Title</div>
+                  <div class="sub">Medium • Year</div>
+                </div>
+              </div>
+
+              <div class="art-card">
+                <div class="thumb"></div>
+                <div class="meta">
+                  <div class="name">Artwork Title</div>
+                  <div class="sub">Medium • Year</div>
+                </div>
+              </div>
+
+              <div class="art-card is-hidden">
+                <div class="thumb"></div>
+                <div class="meta">
+                  <div class="name">Artwork Title</div>
+                  <div class="sub">Medium • Year</div>
+                </div>
+              </div>
+
+              <div class="art-card is-hidden">
+                <div class="thumb"></div>
+                <div class="meta">
+                  <div class="name">Artwork Title</div>
+                  <div class="sub">Medium • Year</div>
+                </div>
+              </div>
+
+              <div class="art-card is-hidden">
+                <div class="thumb"></div>
+                <div class="meta">
+                  <div class="name">Artwork Title</div>
+                  <div class="sub">Medium • Year</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- WRITING -->
+          <div class="creative-block">
+            <div class="creative-head">
+              <h3 class="creative-title">Writing</h3>
+              <button class="see-more" data-toggle="writing">See more</button>
+            </div>
+
+            <div class="writing-row" data-collapsible="writing">
+              <article class="writing-card">
+                <div class="writing-top">
+                  <div class="writing-kicker">Essay • Placeholder</div>
+                  <div class="writing-date">2025</div>
+                </div>
+                <h4 class="writing-title">Title of a piece</h4>
+                <p class="writing-excerpt">Short excerpt that previews what the piece is about in 1–2 lines.</p>
+                <a class="writing-link" href="#">Read</a>
+              </article>
+
+              <article class="writing-card">
+                <div class="writing-top">
+                  <div class="writing-kicker">Post • Placeholder</div>
+                  <div class="writing-date">2025</div>
+                </div>
+                <h4 class="writing-title">Title of a piece</h4>
+                <p class="writing-excerpt">Short excerpt that previews what the piece is about in 1–2 lines.</p>
+                <a class="writing-link" href="#">Read</a>
+              </article>
+
+              <article class="writing-card">
+                <div class="writing-top">
+                  <div class="writing-kicker">Note • Placeholder</div>
+                  <div class="writing-date">2025</div>
+                </div>
+                <h4 class="writing-title">Title of a piece</h4>
+                <p class="writing-excerpt">Short excerpt that previews what the piece is about in 1–2 lines.</p>
+                <a class="writing-link" href="#">Read</a>
+              </article>
+
+              <article class="writing-card is-hidden">
+                <div class="writing-top">
+                  <div class="writing-kicker">Essay • Placeholder</div>
+                  <div class="writing-date">2024</div>
+                </div>
+                <h4 class="writing-title">Another title</h4>
+                <p class="writing-excerpt">Short excerpt that previews what the piece is about in 1–2 lines.</p>
+                <a class="writing-link" href="#">Read</a>
+              </article>
+
+              <article class="writing-card is-hidden">
+                <div class="writing-top">
+                  <div class="writing-kicker">Post • Placeholder</div>
+                  <div class="writing-date">2024</div>
+                </div>
+                <h4 class="writing-title">Another title</h4>
+                <p class="writing-excerpt">Short excerpt that previews what the piece is about in 1–2 lines.</p>
+                <a class="writing-link" href="#">Read</a>
+              </article>
+
+              <article class="writing-card is-hidden">
+                <div class="writing-top">
+                  <div class="writing-kicker">Note • Placeholder</div>
+                  <div class="writing-date">2024</div>
+                </div>
+                <h4 class="writing-title">Another title</h4>
+                <p class="writing-excerpt">Short excerpt that previews what the piece is about in 1–2 lines.</p>
+                <a class="writing-link" href="#">Read</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="bg-orb orb-a" aria-hidden="true"></div>
+      <div class="bg-orb orb-b" aria-hidden="true"></div>
+      <div class="bg-orb orb-c" aria-hidden="true"></div>
+
+      <header class="section-header">
+        <h2 class="section-title">Connect</h2>
+        <p class="section-subtitle">Reach out for collaborations, roles, or a quick chat.</p>
+        <span class="section-underline"></span>
+      </header>
+
+      <div class="container contact-wrap">
         <div class="contact-grid">
-          <a class="contact-card" href="mailto:sushanth@example.com">
-            <span class="icon-wrap" aria-hidden="true">
-              <!-- Mail -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8" />
-                <path d="m4 7 8 7 8-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          <a class="contact-chip" href="mailto:sushanth@example.com">
+            <span class="chip-ico" aria-hidden="true">✉️</span>
+            <span class="chip-meta">
+              <span class="chip-label">Email</span>
+              <span class="chip-value">sushanth@example.com</span>
             </span>
-            <div class="contact-text">
-              <div class="contact-label">Email</div>
-              <div class="contact-value">sushanth@example.com</div>
-            </div>
           </a>
 
-          <a class="contact-card" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noreferrer">
-            <span class="icon-wrap" aria-hidden="true" data-tone="blue">
-              <!-- LinkedIn -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <path d="M6.5 10.5V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M6.5 7.2h.01" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
-                <path d="M10.5 18v-4.2c0-1.9 1.2-3.3 3-3.3s3 1.4 3 3.3V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10.5 10.5V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              </svg>
+          <a class="contact-chip" href="#" target="_blank" rel="noreferrer">
+            <span class="chip-ico" aria-hidden="true">in</span>
+            <span class="chip-meta">
+              <span class="chip-label">LinkedIn</span>
+              <span class="chip-value">linkedin.com/in/your-handle</span>
             </span>
-            <div class="contact-text">
-              <div class="contact-label">LinkedIn</div>
-              <div class="contact-value">linkedin.com/in/your-handle</div>
-            </div>
           </a>
 
-          <a class="contact-card" href="https://github.com/sushanth128" target="_blank" rel="noreferrer">
-            <span class="icon-wrap" aria-hidden="true" data-tone="purple">
-              <!-- GitHub -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <path d="M9 19c-3 1-3-1.5-4-2m8 3v-2.6c0-.8.3-1.4.8-1.9-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.5.9 1.3.9 2.5V20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          <a class="contact-chip" href="https://github.com/sushanth128" target="_blank" rel="noreferrer">
+            <span class="chip-ico" aria-hidden="true">⌂</span>
+            <span class="chip-meta">
+              <span class="chip-label">GitHub</span>
+              <span class="chip-value">github.com/sushanth128</span>
             </span>
-            <div class="contact-text">
-              <div class="contact-label">GitHub</div>
-              <div class="contact-value">github.com/sushanth128</div>
-            </div>
           </a>
 
-          <a class="contact-card" href="https://your-site.com" target="_blank" rel="noreferrer">
-            <span class="icon-wrap" aria-hidden="true" data-tone="teal">
-              <!-- Globe -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M3 12h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M12 3c2.5 2.7 3.8 5.8 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.8-3.8-9S9.5 5.7 12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          <a class="contact-chip" href="#" target="_blank" rel="noreferrer">
+            <span class="chip-ico" aria-hidden="true">🌐</span>
+            <span class="chip-meta">
+              <span class="chip-label">Website</span>
+              <span class="chip-value">your-site.com</span>
             </span>
-            <div class="contact-text">
-              <div class="contact-label">Website</div>
-              <div class="contact-value">your-site.com</div>
-            </div>
           </a>
         </div>
 
-        <div class="availability-card">
-          <div class="availability-title">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span>Currently Available</span>
+        <div class="contact-panel">
+          <div class="contact-panel-head">
+            <div class="dot"></div>
+            <h3>Send me a message</h3>
+            <p>Form works locally; for GitHub Pages it opens your email client via mailto.</p>
           </div>
 
-          <div class="availability-grid">
-            <div class="mini-card">
-              <div class="mini-top">
-                <span class="mini-icon" aria-hidden="true">
-                  <svg class="icon" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 21s7-4.4 7-11a7 7 0 1 0-14 0c0 6.6 7 11 7 11Z" stroke="currentColor" stroke-width="1.8"/>
-                    <path d="M12 10.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="currentColor" stroke-width="1.8"/>
-                  </svg>
-                </span>
-                <div class="mini-label">Location</div>
-              </div>
-              <div class="mini-value">Brooklyn, NY / Remote</div>
+          <!-- Static-site friendly: mailto -->
+          <form id="contactForm" class="contact-form"
+                action="mailto:sushanth@example.com"
+                method="POST"
+                enctype="text/plain"
+                novalidate>
+            <div class="form-row">
+              <label>
+                <span>Name</span>
+                <input name="name" type="text" autocomplete="name" required placeholder="Your name" />
+              </label>
+              <label>
+                <span>Email</span>
+                <input name="email" type="email" autocomplete="email" required placeholder="you@domain.com" />
+              </label>
             </div>
 
-            <div class="mini-card">
-              <div class="mini-top">
-                <span class="mini-icon" aria-hidden="true">
-                  <svg class="icon" viewBox="0 0 24 24" fill="none">
-                    <path d="M8 7h8M8 12h8M8 17h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                    <path d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8"/>
-                  </svg>
-                </span>
-                <div class="mini-label">Interested Roles</div>
-              </div>
-              <div class="mini-value">Data Scientist, ML Engineer</div>
-            </div>
+            <label>
+              <span>Subject</span>
+              <input name="subject" type="text" required placeholder="What’s this about?" />
+            </label>
 
-            <div class="mini-card">
-              <div class="mini-top">
-                <span class="mini-icon" aria-hidden="true">
-                  <svg class="icon" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 3v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                    <path d="M7 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                    <path d="M5 21h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                    <path d="M9 21v-3.5c0-1.7 1.3-3 3-3s3 1.3 3 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </span>
-                <div class="mini-label">Work Type</div>
-              </div>
-              <div class="mini-value">Full-time, Contract</div>
-            </div>
-          </div>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" required placeholder="Write your message..."></textarea>
+            </label>
 
-          <div class="quick-note">
-            <span class="quick-pill">Quick response</span>
-            <span>Typically within 24–48 hours. Add “URGENT” to subject if needed.</span>
-          </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Send</button>
+              <div id="formStatus" class="form-status" aria-live="polite"></div>
+            </div>
+          </form>
         </div>
-
-        <a class="contact-cta" href="mailto:sushanth@example.com?subject=Hello%20Sushanth">
-          <span class="cta-icon" aria-hidden="true">
-            <svg class="icon" viewBox="0 0 24 24" fill="none">
-              <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8" />
-              <path d="m4 7 8 7 8-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <span>Send me a message</span>
-          <span class="cta-icon" aria-hidden="true">
-            <svg class="icon" viewBox="0 0 24 24" fill="none">
-              <path d="M4 12 20 4l-6 16-2.6-6.2L4 12Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </a>
       </div>
     </section>
   </main>
 
   <script>
-    // nav scroll + active state
+    // Smooth nav + active state
     (function () {
       const btns = Array.from(document.querySelectorAll(".nav-btn"));
-      const sections = btns.map(b => document.getElementById(b.dataset.target)).filter(Boolean);
+      const ids = btns.map(b => b.dataset.target);
+      const sections = ids.map(id => document.getElementById(id)).filter(Boolean);
 
       function setActive(id) {
         btns.forEach(b => b.classList.toggle("is-active", b.dataset.target === id));
@@ -203,20 +557,89 @@
 
       btns.forEach(b => {
         b.addEventListener("click", () => {
-          const el = document.getElementById(b.dataset.target);
+          const id = b.dataset.target;
+          const el = document.getElementById(id);
           if (!el) return;
           el.scrollIntoView({ behavior: "smooth", block: "start" });
-          setActive(b.dataset.target);
+          setActive(id);
         });
       });
 
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(e => {
-          if (e.isIntersecting) setActive(e.target.id);
-        });
-      }, { rootMargin: "-45% 0px -50% 0px", threshold: 0.01 });
+      const obs = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible?.target?.id) setActive(visible.target.id);
+      }, { root: null, threshold: [0.25, 0.35, 0.5] });
 
-      sections.forEach(s => io.observe(s));
+      sections.forEach(s => obs.observe(s));
+    })();
+
+    // See more toggles (art + writing)
+    (function () {
+      const toggles = document.querySelectorAll("[data-toggle]");
+      toggles.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const key = btn.getAttribute("data-toggle");
+          const wrap = document.querySelector('[data-collapsible="'+key+'"]');
+          if (!wrap) return;
+
+          const hidden = wrap.querySelectorAll(".is-hidden");
+          const isCollapsed = hidden.length > 0;
+
+          if (isCollapsed) {
+            hidden.forEach(el => el.classList.remove("is-hidden"));
+            btn.textContent = "See less";
+          } else {
+            // collapse back to initial: hide everything after first 3 art cards / first 3 writing cards
+            const items = Array.from(wrap.children);
+            items.forEach((el, idx) => {
+              const keep = idx < 3; // 3 visible by default
+              el.classList.toggle("is-hidden", !keep);
+            });
+            btn.textContent = "See more";
+          }
+        });
+      });
+    })();
+
+    // Contact form validation + mailto payload
+    (function () {
+      const form = document.getElementById("contactForm");
+      const status = document.getElementById("formStatus");
+      if (!form || !status) return;
+
+      form.addEventListener("submit", (e) => {
+        const fd = new FormData(form);
+        const name = String(fd.get("name") || "").trim();
+        const email = String(fd.get("email") || "").trim();
+        const subject = String(fd.get("subject") || "").trim();
+        const message = String(fd.get("message") || "").trim();
+
+        const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+        if (!name || !emailOk || !subject || !message) {
+          e.preventDefault();
+          status.textContent = "Fill all fields with a valid email.";
+          return;
+        }
+
+        // Ensure mailto includes useful body even when some clients ignore form fields.
+        const to = "sushanth@example.com";
+        const body =
+          "Name: " + name + "\\n" +
+          "Email: " + email + "\\n\\n" +
+          message;
+
+        const mailto = "mailto:" + encodeURIComponent(to) +
+          "?subject=" + encodeURIComponent(subject) +
+          "&body=" + encodeURIComponent(body);
+
+        // Use mailto directly for consistent behavior on GitHub Pages.
+        e.preventDefault();
+        window.location.href = mailto;
+        status.textContent = "Opening your email client…";
+      });
     })();
   </script>
 </body>
