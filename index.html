@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,22 +10,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
   <header class="site-header">
-    <nav class="nav">
+    <nav class="nav" aria-label="Primary">
       <a class="brand" href="#about" aria-label="Go to About">
-        <div class="brand-glow" aria-hidden="true"></div>
-        <div class="brand-text">
-          <div class="brand-name">Sushanth</div>
-          <div class="brand-role">Data Scientist</div>
-        </div>
+        <span class="brand-glow" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Sushanth</span>
+          <span class="brand-role">Data Scientist</span>
+        </span>
       </a>
 
-      <div class="nav-links" role="navigation" aria-label="Primary">
+      <div class="nav-links" role="navigation" aria-label="Sections">
         <button class="nav-btn is-active" data-target="about">About</button>
         <button class="nav-btn" data-target="projects">Projects</button>
         <button class="nav-btn" data-target="experience">Experience</button>
@@ -36,7 +36,7 @@
   </header>
 
   <main>
-    <!-- ABOUT -->
+    <!-- ABOUT (placeholder) -->
     <section id="about" class="hero">
       <div class="bg-orb orb-a" aria-hidden="true"></div>
       <div class="bg-orb orb-b" aria-hidden="true"></div>
@@ -69,7 +69,7 @@
           </div>
           <div class="hl-card">
             <div class="hl-icon" data-tone="purple">🚀</div>
-            <div class="hl-text">Shipped ML for business impact</div>
+            <div class="hl-text">Shipped ML for impact</div>
           </div>
           <div class="hl-card">
             <div class="hl-icon" data-tone="yellow">✨</div>
@@ -99,72 +99,51 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (placeholder) -->
     <section id="projects" class="projects-section">
-      <header class="section-header">
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Transforming data into impactful solutions</p>
-        <span class="section-underline"></span>
-      </header>
+      <div class="projects-header">
+        <h2>Featured Projects</h2>
+        <p>Transforming data into impactful solutions</p>
+        <div class="underline"></div>
+      </div>
 
       <div class="projects-grid">
-        <article class="project-card accent-blue">
+        <div class="project-card accent-blue">
           <h3>Customer Churn Prediction</h3>
-          <p>
-            Built an ensemble model achieving 94% accuracy in predicting customer churn,
-            helping reduce attrition by 23%.
-          </p>
-
+          <p>Built an ensemble model achieving 94% accuracy in predicting churn, helping reduce attrition by 23%.</p>
           <div class="tags">
             <span>Python</span><span>XGBoost</span><span>SHAP</span><span>AWS SageMaker</span>
           </div>
-
           <div class="metrics">
-            <div class="metric">
-              <span class="label">Accuracy</span>
-              <span class="value">94%</span>
-            </div>
-            <div class="metric">
-              <span class="label">Impact</span>
-              <span class="value">23% reduction</span>
-            </div>
+            <div class="metric"><span class="label">Accuracy</span><span class="value">94%</span></div>
+            <div class="metric"><span class="label">Impact</span><span class="value">23% reduction</span></div>
           </div>
-
           <div class="actions">
-            <a href="projects/churn.html" class="read-more">Read more</a>
+            <a href="#" class="read-more">Read more</a>
             <a href="https://github.com/sushanth128" class="github" target="_blank" rel="noreferrer">GitHub</a>
           </div>
-        </article>
+        </div>
 
-        <article class="project-card accent-teal">
+        <div class="project-card accent-teal">
           <h3>Real-Time Sentiment Analysis</h3>
           <p>Developed a streaming NLP pipeline processing 10K+ social media posts per minute.</p>
-
           <div class="tags">
             <span>PyTorch</span><span>Transformers</span><span>Kafka</span><span>Docker</span>
           </div>
-
           <div class="metrics">
-            <div class="metric">
-              <span class="label">Throughput</span>
-              <span class="value">10K/min</span>
-            </div>
-            <div class="metric">
-              <span class="label">Latency</span>
-              <span class="value">&lt;100ms</span>
-            </div>
+            <div class="metric"><span class="label">Throughput</span><span class="value">10K/min</span></div>
+            <div class="metric"><span class="label">Latency</span><span class="value">&lt;100ms</span></div>
           </div>
-
           <div class="actions">
-            <a href="projects/sentiment.html" class="read-more">Read more</a>
+            <a href="#" class="read-more">Read more</a>
             <a href="https://github.com/sushanth128" class="github" target="_blank" rel="noreferrer">GitHub</a>
           </div>
-        </article>
+        </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="experience-section">
+    <!-- EXPERIENCE (placeholder) -->
+    <section id="experience" class="section">
       <header class="section-header">
         <h2 class="section-title">Work Experience</h2>
         <p class="section-subtitle">Industry, research, and applied ML work</p>
@@ -174,67 +153,69 @@
       <div class="xp-grid">
         <article class="xp-card" data-accent="teal">
           <div class="xp-top">
-            <img class="xp-logo" src="assets/img/company.png" alt="Company logo" />
-            <div class="xp-main">
-              <h3 class="xp-role">Machine Learning Engineer</h3>
-              <div class="xp-company">Startup / Company Name</div>
+            <div class="xp-brand">
+              <img class="xp-logo" src="assets/img/company.png" alt="Company logo" />
+              <div class="xp-main">
+                <h3 class="xp-role">Machine Learning Engineer</h3>
+                <div class="xp-company">Startup / Company Name</div>
+              </div>
             </div>
             <div class="xp-meta">
-              <div class="xp-loc">Brooklyn, NY</div>
-              <div class="xp-dates">2021 – Present</div>
+              <span class="xp-loc">Brooklyn, NY</span>
+              <span class="xp-dot">•</span>
+              <span class="xp-dates">2021 – Present</span>
             </div>
           </div>
 
-          <div class="xp-body">
-            <ul class="xp-bullets">
-              <li>Built and deployed ML models for production systems handling real-world, noisy data</li>
-              <li>Worked on forecasting, experimentation, and model evaluation pipelines</li>
-              <li>Partnered with product and business teams to translate models into decisions</li>
-              <li>Improved model performance and reliability through monitoring and iteration</li>
-            </ul>
+          <ul class="xp-bullets">
+            <li>Built and deployed ML models for production systems handling real-world, noisy data</li>
+            <li>Worked on forecasting, experimentation, and model evaluation pipelines</li>
+            <li>Partnered with product and business teams to translate models into decisions</li>
+            <li>Improved model performance and reliability through monitoring and iteration</li>
+          </ul>
 
-            <div class="xp-tags">
-              <span class="xp-tag">Python</span>
-              <span class="xp-tag">Machine Learning</span>
-              <span class="xp-tag">SQL</span>
-              <span class="xp-tag">MLOps</span>
-            </div>
+          <div class="xp-tags">
+            <span class="xp-tag">Python</span>
+            <span class="xp-tag">Machine Learning</span>
+            <span class="xp-tag">SQL</span>
+            <span class="xp-tag">MLOps</span>
           </div>
         </article>
 
         <article class="xp-card" data-accent="purple">
           <div class="xp-top">
-            <img class="xp-logo" src="assets/img/cmu.png" alt="Carnegie Mellon University logo" />
-            <div class="xp-main">
-              <h3 class="xp-role">Graduate Research / Teaching Assistant</h3>
-              <div class="xp-company">Carnegie Mellon University</div>
+            <div class="xp-brand">
+              <img class="xp-logo" src="assets/img/cmu.png" alt="Carnegie Mellon University logo" />
+              <div class="xp-main">
+                <h3 class="xp-role">Graduate Research / Teaching Assistant</h3>
+                <div class="xp-company">Carnegie Mellon University</div>
+              </div>
             </div>
             <div class="xp-meta">
-              <div class="xp-loc">Pittsburgh, PA</div>
-              <div class="xp-dates">2023 – 2025</div>
+              <span class="xp-loc">Pittsburgh, PA</span>
+              <span class="xp-dot">•</span>
+              <span class="xp-dates">2023 – 2025</span>
             </div>
           </div>
 
-          <div class="xp-body">
-            <ul class="xp-bullets">
-              <li>Conducted applied ML and AI research in collaboration with faculty</li>
-              <li>Supported coursework in applied econometrics and data science</li>
-              <li>Designed assignments and mentored students on modeling techniques</li>
-            </ul>
+          <ul class="xp-bullets">
+            <li>Conducted applied ML and AI research in collaboration with faculty</li>
+            <li>Supported coursework in applied econometrics and data science</li>
+            <li>Designed assignments and mentored students on modeling techniques</li>
+          </ul>
 
-            <div class="xp-tags">
-              <span class="xp-tag">Machine Learning</span>
-              <span class="xp-tag">Research</span>
-              <span class="xp-tag">Teaching</span>
-              <span class="xp-tag">Econometrics</span>
-            </div>
+          <div class="xp-tags">
+            <span class="xp-tag">Machine Learning</span>
+            <span class="xp-tag">Research</span>
+            <span class="xp-tag">Teaching</span>
+            <span class="xp-tag">Econometrics</span>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="education-section">
+    <!-- EDUCATION (placeholder) -->
+    <section id="education" class="section education-section">
       <header class="section-header">
         <h2 class="section-title">Education</h2>
         <p class="section-subtitle">Formal training and core coursework</p>
@@ -265,15 +246,8 @@
           <div class="edu-right">
             <div class="edu-right-title">Relevant coursework</div>
             <ul class="edu-courses">
-              <li>Machine Learning</li>
-              <li>Graduate AI</li>
-              <li>Operationalizing AI</li>
-              <li>Unstructured Analytics</li>
-              <li>Computer Vision</li>
-              <li>Database Systems</li>
-              <li>Advanced Business Analytics</li>
-              <li>Applied Econometrics</li>
-              <li>A/B Testing</li>
+              <li>Machine Learning</li><li>Graduate AI</li><li>Operationalizing AI</li>
+              <li>Unstructured Analytics</li><li>Database Systems</li><li>Applied Econometrics</li>
             </ul>
           </div>
         </article>
@@ -301,44 +275,197 @@
           <div class="edu-right">
             <div class="edu-right-title">Relevant coursework</div>
             <ul class="edu-courses">
-              <li>Software Engineering</li>
-              <li>Data Structures</li>
-              <li>Algorithms</li>
-              <li>Object Oriented Programming</li>
-              <li>Cloud Computing</li>
-              <li>Parallel Programming</li>
-              <li>NLP</li>
-              <li>Computer Vision</li>
-              <li>Advanced Mathematics</li>
+              <li>Data Structures</li><li>Algorithms</li><li>Software Engineering</li>
+              <li>Cloud Computing</li><li>Parallel Programming</li><li>NLP</li>
             </ul>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- CREATIVE -->
-    <section id="creative" class="creative-section">
+    <!-- CREATIVE (placeholder) -->
+    <section id="creative" class="section">
       <header class="section-header">
         <h2 class="section-title">Creative</h2>
-        <p class="section-subtitle">Art, writing, side quests</p>
+        <p class="section-subtitle">Side quests, art, and experiments</p>
         <span class="section-underline"></span>
       </header>
-
-      <div class="placeholder-card">Content coming soon.</div>
+      <div class="container">
+        <div class="placeholder-card">Add creative content here.</div>
+      </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact-section">
+    <!-- CONTACT (matches screenshot style) -->
+    <section id="contact" class="section contact-section">
       <header class="section-header">
         <h2 class="section-title">Contact</h2>
-        <p class="section-subtitle">Reach out</p>
+        <p class="section-subtitle">Reach out for roles, collaborations, or a quick chat</p>
         <span class="section-underline"></span>
       </header>
 
-      <div class="placeholder-card">Content coming soon.</div>
+      <div class="contact-wrap">
+        <div class="contact-grid">
+          <a class="contact-card wide" href="mailto:sushanth@example.com">
+            <div class="contact-ico" data-tone="teal" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 7.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M4 7.5 12 13l8-5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <div class="contact-label">Email</div>
+              <div class="contact-value">sushanth@example.com</div>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            <div class="contact-ico" data-tone="blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6.5 9.5V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M6.5 6.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <path d="M10.5 18v-5.2c0-1.9 1.1-3 2.8-3 1.6 0 2.2 1.1 2.2 2.7V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/sushanth</div>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://github.com/sushanth128" target="_blank" rel="noreferrer">
+            <div class="contact-ico" data-tone="purple" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M9 19c-4 1.3-4-2.5-5-3m10 6v-3.2c0-.9.3-1.4.8-2-2.7-.3-5.5-1.3-5.5-6A4.7 4.7 0 0 1 6.6 6.5c-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0C18.3 3 19.3 3.3 19.3 3.3c.6 1.6.2 2.9.1 3.2a4.7 4.7 0 0 1 1.3 3.3c0 4.7-2.8 5.7-5.5 6 .5.5.9 1.2.9 2.3V22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/sushanth128</div>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://x.com/" target="_blank" rel="noreferrer">
+            <div class="contact-ico" data-tone="blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M20 7.5c-.6.3-1.3.5-2 .6.7-.4 1.2-1.1 1.5-1.9-.7.4-1.5.7-2.3.9A3.4 3.4 0 0 0 11.5 10c0 .3 0 .6.1.8-3.2-.2-6-1.8-8-4.4-.4.7-.5 1.5-.5 2.3 0 1.2.6 2.3 1.6 3-.6 0-1.1-.2-1.6-.4v.1c0 1.7 1.2 3.2 2.9 3.5-.3.1-.7.1-1 .1-.2 0-.5 0-.7-.1.5 1.5 2 2.6 3.7 2.6A6.9 6.9 0 0 1 4 18.6 9.7 9.7 0 0 0 9.3 20c6.3 0 9.7-5.4 9.7-10.1v-.5c.7-.5 1.3-1.1 1.8-1.9Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <div class="contact-label">Twitter</div>
+              <div class="contact-value">@sushanth</div>
+            </div>
+          </a>
+
+          <a class="contact-card" href="#" target="_blank" rel="noreferrer">
+            <div class="contact-ico" data-tone="yellow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M3.5 9.5h17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M12 3a14 14 0 0 1 0 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <div class="contact-label">Website</div>
+              <div class="contact-value">sushanth128.github.io</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="availability">
+          <div class="avail-head">
+            <span class="avail-dot" aria-hidden="true"></span>
+            <span class="avail-title">Currently Available</span>
+          </div>
+
+          <div class="avail-grid">
+            <div class="avail-card">
+              <div class="avail-ico" data-tone="teal" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 10.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="currentColor" stroke-width="1.6"/>
+                </svg>
+              </div>
+              <div class="avail-k">Location</div>
+              <div class="avail-v">Remote or NYC</div>
+            </div>
+
+            <div class="avail-card">
+              <div class="avail-ico" data-tone="blue" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M7 7h10v14H7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                  <path d="M9 3h6v4H9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="avail-k">Interested Roles</div>
+              <div class="avail-v">Data Scientist, ML Engineer</div>
+            </div>
+
+            <div class="avail-card">
+              <div class="avail-ico" data-tone="purple" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M6 20V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M9 7V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="avail-k">Work Type</div>
+              <div class="avail-v">Full-time, Contract</div>
+            </div>
+          </div>
+
+          <div class="quick-note">
+            <span class="quick-badge">⏱ Quick Response</span>
+            <span>I typically respond within 24–48 hours. For urgent matters, put “URGENT” in the subject.</span>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="cta-btn" href="mailto:sushanth@example.com">
+            <span class="cta-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 7.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M4 7.5 12 13l8-5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>Send me a message</span>
+            <span class="cta-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M22 2 11 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M22 2 15 22l-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <script src="assets/js/app.js"></script>
+  <script>
+    (function () {
+      const buttons = Array.from(document.querySelectorAll(".nav-btn"));
+      const sections = buttons.map(b => document.getElementById(b.dataset.target)).filter(Boolean);
+
+      function setActive(id) {
+        buttons.forEach(b => b.classList.toggle("is-active", b.dataset.target === id));
+      }
+
+      function scrollToSection(id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        setActive(id);
+      }
+
+      buttons.forEach(btn => btn.addEventListener("click", () => scrollToSection(btn.dataset.target)));
+
+      const obs = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible?.target?.id) setActive(visible.target.id);
+      }, { root: null, threshold: [0.2, 0.35, 0.5, 0.65] });
+
+      sections.forEach(s => obs.observe(s));
+    })();
+  </script>
 </body>
 </html>
