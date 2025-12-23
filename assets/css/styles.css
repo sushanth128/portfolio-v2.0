@@ -16,6 +16,24 @@
   --max: 1100px;
 }
 
+:root{
+  --bg: #0b0f19;
+  --panel: #1f1f22;
+  --panel2:#252526;
+  --border:#3e3e42;
+
+  --text:#ffffff;
+  --muted:#cfcfcf;
+  --muted2:#8e8e8e;
+
+  --blue:#007acc;
+  --teal:#4ec9b0;
+  --purple:#c586c0;
+  --yellow:#dcdcaa;
+
+  --max: 1100px;
+}
+
 *{ box-sizing:border-box; }
 html,body{ height:100%; }
 body{
@@ -763,4 +781,3 @@ body{
     white-space: normal;
   }
 }
-
